@@ -10,16 +10,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
-
 .container {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .card {
+  transform-style: preserve-3d;
   min-height: 80vh;
   width: 35rem;
   border-radius: 30px;
@@ -33,12 +33,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .sneaker img {
   width: 20rem;
   z-index: 2;
+  transition: all 0.75s ease-out;
 }
-
 .circle {
   width: 15rem;
   height: 15rem;
@@ -54,22 +53,21 @@ body {
 
 .info h1 {
   font-size: 3rem;
+  transition: all 0.75s ease-out;
 }
-
 .info h3 {
   font-size: 1.3rem;
   padding: 2rem 0rem;
   color: #585858;
   font-weight: lighter;
+  transition: all 0.75s ease-out;
 }
-
 .sizes {
   display: flex;
   justify-content: space-between;
+  transition: all 0.75s ease-out;
 }
-
 .sizes button {
-  font-family: 'Poppins', sans-serif;
   padding: 0.5rem 2rem;
   background: none;
   border: none;
@@ -79,22 +77,21 @@ body {
   font-weight: bold;
   color: #585858;
 }
-
 button.active {
   background: #585858;
   color: white;
 }
-
 .purchase {
   margin-top: 5rem;
+  transition: all 0.75s ease-out;
 }
-
 .purchase button {
   width: 100%;
   padding: 1rem 0rem;
-  background: #f56442;
+  background: #f54642;
   border: none;
   color: white;
   cursor: pointer;
   border-radius: 30px;
+  font-weight: bolder;
 }
